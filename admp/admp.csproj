@@ -94,6 +94,8 @@
     <Compile Include="forms\ParentForm.Designer.cs">
       <DependentUpon>ParentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="masters\SchemaSerializer.cs" />
+    <Compile Include="masters\StyleSerializer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="forms\children\JournalForm.resx">
@@ -124,10 +126,12 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Connection.Designer.cs</LastGenOutput>
     </None>
+    <None Include="config\DboAdapters.md" />
     <None Include="config\Query.settings">
       <Generator>PublicSettingsSingleFileGenerator</Generator>
       <LastGenOutput>Query.Designer.cs</LastGenOutput>
     </None>
+    <None Include="forms\ParentFormCalls.md" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -144,6 +148,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="forms\dialogs\" />
+    <Folder Include="screenshots\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="forms\FormsTarget.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -38,85 +38,61 @@ namespace admp.config {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("SELECT * FROM [Users]")]
-        public string UsersSelection {
+        [global::System.Configuration.DefaultSettingValueAttribute("users")]
+        public string UsersObject {
             get {
-                return ((string)(this["UsersSelection"]));
+                return ((string)(this["UsersObject"]));
             }
             set {
-                this["UsersSelection"] = value;
+                this["UsersObject"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("SELECT * FROM [Types]")]
-        public string UsersTypeSelection {
+        [global::System.Configuration.DefaultSettingValueAttribute("types")]
+        public string UserTypesObject {
             get {
-                return ((string)(this["UsersTypeSelection"]));
+                return ((string)(this["UserTypesObject"]));
             }
             set {
-                this["UsersTypeSelection"] = value;
+                this["UserTypesObject"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("SELECT * FROM [Messages]")]
-        public string MessagesSelection {
+        [global::System.Configuration.DefaultSettingValueAttribute("documents")]
+        public string DocumentsObject {
             get {
-                return ((string)(this["MessagesSelection"]));
+                return ((string)(this["DocumentsObject"]));
             }
             set {
-                this["MessagesSelection"] = value;
+                this["DocumentsObject"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("SELECT * FROM [Documents]")]
-        public string DocumentsSelection {
+        [global::System.Configuration.DefaultSettingValueAttribute("messages")]
+        public string MessagesObject {
             get {
-                return ((string)(this["DocumentsSelection"]));
+                return ((string)(this["MessagesObject"]));
             }
             set {
-                this["DocumentsSelection"] = value;
+                this["MessagesObject"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("INSERT [USERS] (ID, NAME, SNAME, LOGIN, PASS, EMAIL) VALUES")]
-        public string UserInsert {
+        [global::System.Configuration.DefaultSettingValueAttribute("message_types")]
+        public string MessagesTypesObject {
             get {
-                return ((string)(this["UserInsert"]));
+                return ((string)(this["MessagesTypesObject"]));
             }
             set {
-                this["UserInsert"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("INSERT [TYPES] (ID, CONTENT, DESCRIPTION) VALUES")]
-        public string UserTypeInsert {
-            get {
-                return ((string)(this["UserTypeInsert"]));
-            }
-            set {
-                this["UserTypeInsert"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("INSERT [DOCUMENTS] () VALUES")]
-        public string DocumentInsert {
-            get {
-                return ((string)(this["DocumentInsert"]));
-            }
-            set {
-                this["DocumentInsert"] = value;
+                this["MessagesTypesObject"] = value;
             }
         }
     }

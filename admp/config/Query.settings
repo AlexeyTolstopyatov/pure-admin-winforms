@@ -6,26 +6,20 @@
       <Value Profile="(Default)">SELECT TABLE_NAME FROM stroy.INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE='BASE TABLE'
 </Value>
     </Setting>
-    <Setting Name="UsersSelection" Type="System.String" Scope="User">
-      <Value Profile="(Default)">SELECT * FROM [Users]</Value>
+    <Setting Name="UsersObject" Type="System.String" Scope="User">
+      <Value Profile="(Default)">users</Value>
     </Setting>
-    <Setting Name="UsersTypeSelection" Type="System.String" Scope="User">
-      <Value Profile="(Default)">SELECT * FROM [Types]</Value>
+    <Setting Name="UserTypesObject" Type="System.String" Scope="User">
+      <Value Profile="(Default)">types</Value>
     </Setting>
-    <Setting Name="MessagesSelection" Type="System.String" Scope="User">
-      <Value Profile="(Default)">SELECT * FROM [Messages]</Value>
+    <Setting Name="DocumentsObject" Type="System.String" Scope="User">
+      <Value Profile="(Default)">documents</Value>
     </Setting>
-    <Setting Name="DocumentsSelection" Type="System.String" Scope="User">
-      <Value Profile="(Default)">SELECT * FROM [Documents]</Value>
+    <Setting Name="MessagesObject" Type="System.String" Scope="User">
+      <Value Profile="(Default)">messages</Value>
     </Setting>
-    <Setting Name="UserInsert" Type="System.String" Scope="User">
-      <Value Profile="(Default)">INSERT [USERS] (ID, NAME, SNAME, LOGIN, PASS, EMAIL) VALUES</Value>
-    </Setting>
-    <Setting Name="UserTypeInsert" Type="System.String" Scope="User">
-      <Value Profile="(Default)">INSERT [TYPES] (ID, CONTENT, DESCRIPTION) VALUES</Value>
-    </Setting>
-    <Setting Name="DocumentInsert" Type="System.String" Scope="User">
-      <Value Profile="(Default)">INSERT [DOCUMENTS] () VALUES</Value>
+    <Setting Name="MessagesTypesObject" Type="System.String" Scope="User">
+      <Value Profile="(Default)">message_types</Value>
     </Setting>
   </Settings>
 </SettingsFile>

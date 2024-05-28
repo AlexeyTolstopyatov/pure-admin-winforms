@@ -22,6 +22,10 @@ namespace admp
             _ = LoadObjectsAsync();
         }
 
+        /// <summary>
+        /// Собирает сведения о системе, для отображения их на форме родителе
+        /// </summary>
+        /// <returns></returns>
         private Task CollectInformationAsync()
         {
             infoBox.Text =
@@ -37,6 +41,10 @@ namespace admp
             return Task.CompletedTask;
         }
 
+        /// <summary>
+        /// Загружает в WindowsItem элементы всех объектов базы данных (таблицы)
+        /// </summary>
+        /// <returns></returns>
         private async Task LoadObjectsAsync()
         {
             object[] tables = 
@@ -49,6 +57,11 @@ namespace admp
 
         private string _itemTag = "";
 
+        /// <summary>
+        /// Создает элемент меню, заносит его в WindowsItem (MenuStripItem)
+        /// </summary>
+        /// <param name="text">Название элемента</param>
+        /// <returns></returns>
         private Task CreateMenuItemAsync(string text)
         {
             ToolStripMenuItem item = new ToolStripMenuItem();
@@ -69,6 +82,11 @@ namespace admp
             return Task.CompletedTask;
         }
 
+        /// <summary>
+        /// Открывает форму внутри MDI родителя
+        /// </summary>
+        /// <param name="window">Экземпляр формы</param>
+        /// <returns></returns>
         private Task OpenChildWindowAsync(Form window)
         {
             IsMdiContainer = true;
