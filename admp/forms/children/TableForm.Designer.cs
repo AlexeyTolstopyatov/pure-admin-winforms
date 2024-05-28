@@ -50,7 +50,7 @@
             this.Name = "TableForm";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "TableForm";
+            this.Text = "Представление таблицы";
             ((System.ComponentModel.ISupportInitialize)(this.tableView)).EndInit();
             this.ResumeLayout(false);
 

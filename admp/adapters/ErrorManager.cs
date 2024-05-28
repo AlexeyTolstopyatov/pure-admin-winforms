@@ -11,6 +11,11 @@ namespace admp.adapters
     {
         private static List<string> _errors = new List<string>(); 
 
+        /// <summary>
+        /// Обрабатывает ошибку, записывает сообщение в список
+        /// </summary>
+        /// <param name="message">сообщение</param>
+        /// <returns></returns>
         public static Task ReportAsync(string message)
         { 
             _errors.Add(message);
@@ -25,9 +30,17 @@ namespace admp.adapters
             return Task.CompletedTask;  
         }
 
+        /// <summary>
+        /// Производит поиск в журнале событий
+        /// </summary>
+        /// <returns>Последнее сообщение в журнале</returns>
         public static Task<string> LastReportAsync() => 
             Task.FromResult(_errors.Last());
 
+        /// <summary>
+        /// Производит копию отчета в виде фиксированного списка
+        /// </summary>
+        /// <returns>Массив всех сообщений из журнала</returns>
         public static Task<string[]> GetReportsAsync() =>
             Task.FromResult(_errors.ToArray());
         

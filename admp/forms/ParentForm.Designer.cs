@@ -38,6 +38,10 @@
             this.xsdMasterItem = new System.Windows.Forms.ToolStripMenuItem();
             this.journalItem = new System.Windows.Forms.ToolStripMenuItem();
             this.regobjItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportRegisterItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.системаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.restartItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitItem = new System.Windows.Forms.ToolStripMenuItem();
             this.darkMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +64,8 @@
             this.darkMenuStrip1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.darkMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.windowsItem,
-            this.инструментыToolStripMenuItem});
+            this.инструментыToolStripMenuItem,
+            this.системаToolStripMenuItem});
             this.darkMenuStrip1.Location = new System.Drawing.Point(0, 0);
             this.darkMenuStrip1.Name = "darkMenuStrip1";
             this.darkMenuStrip1.Padding = new System.Windows.Forms.Padding(3, 2, 0, 2);
@@ -85,7 +90,8 @@
             this.openConfigItem,
             this.xsdMasterItem,
             this.journalItem,
-            this.regobjItem});
+            this.regobjItem,
+            this.exportRegisterItem});
             this.инструментыToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.инструментыToolStripMenuItem.Name = "инструментыToolStripMenuItem";
             this.инструментыToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
@@ -96,7 +102,7 @@
             this.newQueryItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.newQueryItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.newQueryItem.Name = "newQueryItem";
-            this.newQueryItem.Size = new System.Drawing.Size(195, 22);
+            this.newQueryItem.Size = new System.Drawing.Size(211, 22);
             this.newQueryItem.Text = "Новый запрос";
             this.newQueryItem.Click += new System.EventHandler(this.newQueryItem_Click);
             // 
@@ -105,7 +111,7 @@
             this.openToolsItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.openToolsItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.openToolsItem.Name = "openToolsItem";
-            this.openToolsItem.Size = new System.Drawing.Size(195, 22);
+            this.openToolsItem.Size = new System.Drawing.Size(211, 22);
             this.openToolsItem.Text = "Открыть в окне";
             // 
             // openConfigItem
@@ -113,7 +119,7 @@
             this.openConfigItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.openConfigItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.openConfigItem.Name = "openConfigItem";
-            this.openConfigItem.Size = new System.Drawing.Size(195, 22);
+            this.openConfigItem.Size = new System.Drawing.Size(211, 22);
             this.openConfigItem.Text = "Открыть user.config";
             // 
             // xsdMasterItem
@@ -121,15 +127,16 @@
             this.xsdMasterItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.xsdMasterItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.xsdMasterItem.Name = "xsdMasterItem";
-            this.xsdMasterItem.Size = new System.Drawing.Size(195, 22);
+            this.xsdMasterItem.Size = new System.Drawing.Size(211, 22);
             this.xsdMasterItem.Text = "Мастер проверки XSD";
+            this.xsdMasterItem.Click += new System.EventHandler(this.xsdMasterItem_Click);
             // 
             // journalItem
             // 
             this.journalItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.journalItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.journalItem.Name = "journalItem";
-            this.journalItem.Size = new System.Drawing.Size(195, 22);
+            this.journalItem.Size = new System.Drawing.Size(211, 22);
             this.journalItem.Text = "Журнал событий";
             this.journalItem.Click += new System.EventHandler(this.journalItem_Click);
             // 
@@ -138,9 +145,47 @@
             this.regobjItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
             this.regobjItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
             this.regobjItem.Name = "regobjItem";
-            this.regobjItem.Size = new System.Drawing.Size(195, 22);
+            this.regobjItem.Size = new System.Drawing.Size(211, 22);
             this.regobjItem.Text = "Открыть реестр";
             this.regobjItem.Click += new System.EventHandler(this.regobjItem_Click);
+            // 
+            // exportRegisterItem
+            // 
+            this.exportRegisterItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.exportRegisterItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.exportRegisterItem.Name = "exportRegisterItem";
+            this.exportRegisterItem.Size = new System.Drawing.Size(211, 22);
+            this.exportRegisterItem.Text = "Сохранить файл реестра";
+            this.exportRegisterItem.Click += new System.EventHandler(this.exportRegisterItem_Click);
+            // 
+            // системаToolStripMenuItem
+            // 
+            this.системаToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.системаToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.restartItem,
+            this.exitItem});
+            this.системаToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.системаToolStripMenuItem.Name = "системаToolStripMenuItem";
+            this.системаToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
+            this.системаToolStripMenuItem.Text = "Система";
+            // 
+            // restartItem
+            // 
+            this.restartItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.restartItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.restartItem.Name = "restartItem";
+            this.restartItem.Size = new System.Drawing.Size(189, 22);
+            this.restartItem.Text = "Перезапустить сеанс";
+            this.restartItem.Click += new System.EventHandler(this.restartItem_Click);
+            // 
+            // exitItem
+            // 
+            this.exitItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(63)))), ((int)(((byte)(65)))));
+            this.exitItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.exitItem.Name = "exitItem";
+            this.exitItem.Size = new System.Drawing.Size(189, 22);
+            this.exitItem.Text = "Завершить сеанс";
+            this.exitItem.Click += new System.EventHandler(this.exitItem_Click);
             // 
             // ParentForm
             // 
@@ -154,6 +199,7 @@
             this.MainMenuStrip = this.darkMenuStrip1;
             this.Name = "ParentForm";
             this.Text = "Рабочий стол";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.exitItem_Click);
             this.Load += new System.EventHandler(this.ParentForm_Load);
             this.darkMenuStrip1.ResumeLayout(false);
             this.darkMenuStrip1.PerformLayout();
@@ -174,6 +220,10 @@
         private System.Windows.Forms.ToolStripMenuItem xsdMasterItem;
         private System.Windows.Forms.ToolStripMenuItem journalItem;
         private System.Windows.Forms.ToolStripMenuItem regobjItem;
+        private System.Windows.Forms.ToolStripMenuItem системаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem restartItem;
+        private System.Windows.Forms.ToolStripMenuItem exitItem;
+        private System.Windows.Forms.ToolStripMenuItem exportRegisterItem;
     }
 }
 

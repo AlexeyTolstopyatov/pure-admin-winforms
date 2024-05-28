@@ -26,12 +26,12 @@ namespace admp.config {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("SERVER=nidompc\\sqlexpress;DATABASE=stroy;trusted_connection=true")]
-        public string WindowsAuthentication {
+        public string ConnectingString {
             get {
-                return ((string)(this["WindowsAuthentication"]));
+                return ((string)(this["ConnectingString"]));
             }
             set {
-                this["WindowsAuthentication"] = value;
+                this["ConnectingString"] = value;
             }
         }
     }

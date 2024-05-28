@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Dark.Net;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,8 @@ namespace admp.forms.children
         public JournalForm(string[] journal)
         {
             InitializeComponent();
+
+            DarkNet.Instance.SetWindowThemeForms(this, Theme.Dark);
 
             foreach (string report in journal)
                 journalBox.AppendText(report);
