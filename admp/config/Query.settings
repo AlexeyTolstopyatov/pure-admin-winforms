@@ -1,0 +1,31 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="admp.config" GeneratedClassName="Query">
+  <Profiles />
+  <Settings>
+    <Setting Name="DboSelection" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SELECT TABLE_NAME FROM stroy.INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE='BASE TABLE'
+</Value>
+    </Setting>
+    <Setting Name="UsersSelection" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SELECT * FROM [Users]</Value>
+    </Setting>
+    <Setting Name="UsersTypeSelection" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SELECT * FROM [Types]</Value>
+    </Setting>
+    <Setting Name="MessagesSelection" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SELECT * FROM [Messages]</Value>
+    </Setting>
+    <Setting Name="DocumentsSelection" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SELECT * FROM [Documents]</Value>
+    </Setting>
+    <Setting Name="UserInsert" Type="System.String" Scope="User">
+      <Value Profile="(Default)">INSERT [USERS] (ID, NAME, SNAME, LOGIN, PASS, EMAIL) VALUES</Value>
+    </Setting>
+    <Setting Name="UserTypeInsert" Type="System.String" Scope="User">
+      <Value Profile="(Default)">INSERT [TYPES] (ID, CONTENT, DESCRIPTION) VALUES</Value>
+    </Setting>
+    <Setting Name="DocumentInsert" Type="System.String" Scope="User">
+      <Value Profile="(Default)">INSERT [DOCUMENTS] () VALUES</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

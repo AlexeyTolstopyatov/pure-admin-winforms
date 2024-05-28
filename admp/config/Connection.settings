@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="admp.config" GeneratedClassName="Connection">
+  <Profiles />
+  <Settings>
+    <Setting Name="WindowsAuthentication" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SERVER=nidompc\sqlexpress;DATABASE=stroy;trusted_connection=true</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
